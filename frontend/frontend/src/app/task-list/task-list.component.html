@@ -1,0 +1,46 @@
+<h2 style="color: white; text-align: center; margin-bottom: 15px; font-size: 20px;">
+  Task Tracker by Kyra
+</h2>
+
+<div class="box">
+  <div class="header-container">
+    <h2>Task List</h2>
+    <div class="sorting-controls">
+      <button class="sort-button blue" 
+              [ngClass]="{'active': sortBy === 'taskName'}"
+              (click)="sortTasks('taskName')">
+        Sort by Name {{ sortBy === 'taskName' ? (sortOrder === 'asc' ? '↑' : '↓') : '' }}
+      </button>
+      <button class="sort-button blue" 
+              [ngClass]="{'active': sortBy === 'status'}"
+              (click)="sortTasks('status')">
+        Sort by Status {{ sortBy === 'status' ? (sortOrder === 'asc' ? '↑' : '↓') : '' }}
+      </button>
+    </div>
+    
+    
+  </div>
+
+  
+  <!-- Display task list when there are tasks -->
+  <div class="task-list-container">
+    <ul>
+      <!-- Display message when there are no tasks -->
+      <div *ngIf="!isLoading && tasks?.length === 0" class="no-tasks-message">
+        <p style="color: rgb(173, 173, 173); text-align: left;">No tasks to display. Please add a task.</p>
+      </div>
+      <li *ngFor="let task of tasks; let i = index">
+        {{ i + 1 }}.
+        <a [routerLink]="['/tasks', task.id]" style="margin-right: 0px;">
+          {{ task.taskName }}  <!-- Using taskName now -->
+        </a>
+        <span [ngClass]="task.status === 'Completed' ? 'completed' : 'pending'">
+          {{ task.status }}
+        </span>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+
+<app-navigation></app-navigation>

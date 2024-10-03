@@ -1,0 +1,11 @@
+.main {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency */
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 2;
+    position: relative; /* To position the h2 above the box */
+    flex-direction: column; /* Align h2 and .box in a column */
+  }

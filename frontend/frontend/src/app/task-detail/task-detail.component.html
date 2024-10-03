@@ -1,0 +1,74 @@
+<h2 style="color: white; text-align: center; margin-bottom: 15px; font-size: 20px;">
+  Task Tracker by Kyra
+</h2>
+
+<!-- Only display the form if task is defined -->
+<div class="box" *ngIf="task">
+  <h2>Task Details</h2>
+
+  <form #taskForm="ngForm" (ngSubmit)="saveTask(taskForm)">
+    <!-- Success message for task update -->
+    <div *ngIf="successMessage" style="color: green; text-align: center; margin-bottom: 10px;">
+      {{ successMessage }}
+    </div>
+
+    
+    <!-- Display the task name with min and max length validation -->
+    <label for="name">Task Name</label>
+    <input 
+      id="name" 
+      type="text" 
+      [(ngModel)]="task.taskName" 
+      name="name" 
+      required 
+      minlength="3" 
+      maxlength="50" 
+      #taskName="ngModel"
+      placeholder="Name (3-50 characters)">
+    
+    <!-- Error messages for Task Name (only after form submission) -->
+    <div *ngIf="taskForm.submitted && taskName.invalid">
+      <p *ngIf="taskName.errors?.['required']" style="color: red;text-align: center;">Task Name is required.</p>
+      <p *ngIf="taskName.errors?.['minlength']" style="color: red;text-align: center;">Task Name must be at least 3 characters long.</p>
+      <p *ngIf="taskName.errors?.['maxlength']" style="color: red;text-align: center;">Task Name must be less than 50 characters long.</p>
+    </div>
+
+    <!-- Task Description -->
+    <label for="description">Description</label>
+    <textarea 
+      id="description" 
+      [(ngModel)]="task.description" 
+      name="description" 
+      style="height:160px;" 
+      maxlength="500" 
+      #taskDescription="ngModel"
+      placeholder="Description (max 500 characters)"
+    ></textarea>
+
+    <!-- Error message for Task Description (only after form submission) -->
+    <div *ngIf="taskForm.submitted && taskDescription.invalid">
+      <p *ngIf="taskDescription.errors?.['maxlength']" style="color: red;">Task Description must be less than 500 characters.</p>
+    </div>
+
+    <!-- Task Status -->
+    <label for="status" style="margin-top: 21px;">Status</label>
+    <select id="status" [(ngModel)]="task.status" name="status">
+      <option value="Pending">Pending</option>
+      <option value="Completed">Completed</option>
+    </select>
+
+    <div style="display: flex; justify-content: flex-start; gap: 10px;" class="button-container">
+      <!-- Submit button to trigger the saveTask() function -->
+      <button type="submit">Edit</button>
+      <!-- Delete button to trigger the deleteTask() function -->
+      <button type="button" (click)="deleteTask()">Delete</button>
+    </div>
+  </form>
+</div>
+
+<!-- Display an error message if the task isn't found -->
+<div *ngIf="!task">
+  <p style="color: red; text-align: center;">Task not found.</p>
+</div>
+
+<app-navigation></app-navigation>

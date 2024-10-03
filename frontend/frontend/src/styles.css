@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    box-shadow: 0 0px 25px rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .box h2 {
+    margin: 0px;
+    margin-top: 0px ;
+    margin-bottom: 10px ;
+    padding: 0;
+    font-size: 14px ;
+    font: 'Open Sans';
+    color: rgb(151, 151, 151);
+    text-align: justify;
+  }
+
+  .box p {
+    margin: 0px;
+    margin-top: 5px ;
+    margin-bottom: 0px ;
+    padding: 0;
+    font-size: 16px ;
+    font: 'Open Sans';
+    color: rgb(164, 164, 164);
+    text-align: justify;
+  }
+  
+
+/* Ensure html and body are transparent */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent; /* Transparent background */
+    overflow: hidden; /* Optional: prevents scrolling */
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+/* Ensure tsParticles stays in the background */
+#tsparticles {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Ensure the app content is above tsParticles */
+app-root {
+  position: relative; /* Ensures it stays above the particles */
+  z-index: 10; /* Higher z-index to stay on top */
+}

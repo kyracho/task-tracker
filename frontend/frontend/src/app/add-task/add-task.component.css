@@ -1,0 +1,149 @@
+/* Styling for the main container */
+form {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(61, 61, 61);
+  margin-bottom: 0px;
+  width: 50vw;
+}
+
+
+/* Label styles */
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  color: rgb(151, 151, 151);
+}
+
+/* Input, Textarea, and Select styles with dark grey background */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  background-color: #2e2e2e; /* Dark grey background */
+  color: #fff; /* White text color for readability */
+  border-radius: 4px; /* Border-radius for all input fields */
+  border: 0px solid #555; /* Border color for visibility */
+  box-sizing: border-box;
+}
+
+/* Specifically target the "name" input if needed */
+input[name="name"] {
+  width: 100%;
+  background-color: #2e2e2e; /* Dark grey background */
+  color: #fff;
+  font-size: 14px;
+  border: 0px solid #555;
+  padding: 4px;
+  border-radius: 4px; /* Ensures the border-radius applies to "name" field */
+}
+
+/* Styling for textareas (with fixed height and no resizing) */
+textarea {
+  height: 100px; /* Set a fixed height */
+  resize: none; /* Disable resizing */
+  background-color: #2e2e2e; /* Dark grey background */
+  color: #fff;
+  border-radius: 4px;
+  border: 0px solid #555;
+  box-sizing: border-box;
+}
+
+/* Dark theme for scrollbars */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #1c1c1e; /* Darker background for the track */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #555; /* Dark grey scrollbar */
+  border-radius: 4px;
+  border: 1px solid #444; /* Border for scrollbar thumb */
+}
+
+/* Firefox scrollbar styling */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1c1c1e;
+}
+
+/* Styling for textareas */
+textarea {
+  height: 120px;
+  max-height: 350px;
+  resize: vertical;
+  background-color: #2e2e2e; /* Dark grey background */
+  color: #fff;
+  border: 2px;
+}
+
+/* Buttons */
+button {
+  padding: 4px 10px; /* Thinner vertical padding for thinner buttons */
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 4px; /* Consistent border-radius */
+  cursor: pointer;
+}
+
+/* Add Task button */
+button[type="submit"] {
+  background-color: #28a745;
+  height: 26px; /* Set the desired height */
+  width: 80px;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 15px; /* Padding for left and right */
+  font-size: 9px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Hover effect for Add Task button */
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+
+/* Center the form actions */
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling for the status bar (assumed to be at the top) */
+body {
+  background-color: #ffffff; /* Set body background color to match container */
+}
+
+/* Apply status bar color globally if it's an input field */
+input[type="text"],
+textarea,
+select,
+input[name="name"] {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+
+:host {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Optionally center content vertically */
+  width: 100%;
+  min-height: 100vh;       /* Full viewport height */
+  flex-direction: column;  /* Ensure the layout is vertical */
+}

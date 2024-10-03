@@ -1,0 +1,109 @@
+/* Form container to center the form on the page */
+form {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgb(61, 61, 61);
+  margin-bottom: 0px;
+  width: 50vw;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  color: rgb(151, 151, 151);
+}
+/* Style for input fields, textarea, and select */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 0px; /* No bottom margin for inputs and textarea */
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+/* Specific style for select with a separate bottom margin */
+select {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 15px; /* Add custom bottom margin for select */
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+
+
+/* Textarea specific styles */
+textarea {
+  height: 100%;
+  resize: vertical;
+  border: none;
+  padding: 4px;
+}
+
+/* Buttons styling */
+button {
+  height: 26px; /* Set the desired height */
+  width: 80px;
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 15px; /* Padding for left and right */
+  font-size: 9px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  margin-bottom: 0px;
+}
+
+
+/* Delete button styled differently */
+button[type="button"] {
+  background-color: #dc3545;
+}
+
+/* Button hover effects */
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Add some spacing between form elements */
+input,
+textarea,
+select,
+button {
+}
+
+/* Overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Host styles for centering the content */
+:host {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;     /* Optionally center content vertically */
+  width: 100%;
+  min-height: 100vh;       /* Full viewport height */
+  flex-direction: column;  /* Ensure the layout is vertical */
+}

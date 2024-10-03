@@ -1,0 +1,145 @@
+.task-list-container {
+  margin: 0;
+  padding: 7px;
+  background-color: rgb(61, 61, 61);
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  width: 50vw;
+  height: 360px; /* Simplified height */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1c1c1e;
+}
+
+.task-list-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100%; /* Adjusted to use full height of container */
+}
+
+.task-list-container ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.task-list-container ul li a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 12px;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+.task-list-container ul li a:hover {
+  text-decoration: underline !important;
+}
+
+.task-list-container ul li:nth-child(odd) {
+  background-color: #828282;
+}
+
+.task-list-container ul li:nth-child(even) {
+  background-color: #5b5b5b;
+}
+
+.task-list-container ul li a:visited {
+  color: #e0e0e0 !important;
+}
+
+.task-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.task-list-container::-webkit-scrollbar-track {
+  background: #1c1c1e;
+}
+
+.task-list-container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 4px;
+  border: 1px solid #444;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgb(151, 151, 151);
+  text-align: justify;
+}
+
+ul li a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+ul li a:hover {
+  text-decoration: underline !important;
+}
+
+.pending,
+.completed {
+  font-size: 10px;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+}
+
+ul li span.pending {
+  background-color: orange !important;
+}
+
+ul li span.completed {
+  background-color: green !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sorting-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.sort-button {
+  padding: 4px 10px;
+  font-size: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sort-button.blue {
+  background-color: #4d4d4d;
+}
+
+.sort-button.blue:hover {
+  background-color: #7c7c7c;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
