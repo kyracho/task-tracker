@@ -9,12 +9,11 @@ Security and authentication are handled by Auth0, which ensures that users' data
 
 The entire application is dockerized (frontend and backend, separately), which makes deployment simple and consistent across different environments. By leveraging Azure's cloud infrastructure, the application is hosted in a secure and scalable environment, ensuring smooth performance for users. 
 
-Just a quick heads up—my app is currently hosted on Azure as a free tier web app, which means it might be a bit slower to load and respond compared to apps hosted on a paid tier. The free tier provides limited resources, so if you notice any delays, that's the reason!
+Just a quick heads up—my app is currently hosted on Azure as a free tier web app, which means it might be a bit slower to load and respond compared to apps hosted on a paid tier. The free tier provides limited resources, so if you notice any delays, that's the reason! The same goes for the Gcloud MySQL service tier.
+
+Since this is a hobby/showcase project, I have set the task limit per user to 5. Thanks for your understanding!
 
 <img width="700" alt="Screenshot 2024-10-02 at 6 22 00 PM" src="https://github.com/user-attachments/assets/ca19fb0c-e818-476b-bde8-75494f2a99f4">
 <img width="700" alt="Screenshot 2024-10-02 at 6 20 31 PM" src="https://github.com/user-attachments/assets/fe74bf9e-43e5-4656-b96f-93d10d9ee734">
 <img width="700" alt="Screenshot 2024-10-02 at 6 21 39 PM" src="https://github.com/user-attachments/assets/2d243626-b97b-4b1d-ac99-c73c8d707b76">
 <img width="700" alt="Screenshot 2024-10-02 at 6 20 41 PM" src="https://github.com/user-attachments/assets/e7a6e0bb-0aa3-4e02-9a40-9a083d169fc5">
-
-Somedayday I might write a comprehensive guide on how do create and deploy this app. For the time being, the repository implicitly contains most of the information needed to duplicate my project if anyone desires to. 
-
