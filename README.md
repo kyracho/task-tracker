@@ -9,7 +9,7 @@ Security and authentication are handled by Auth0, which ensures that users' data
 
 The entire application is dockerized (frontend and backend, separately), which makes deployment simple and consistent across different environments. By leveraging Azure's cloud infrastructure, the application is hosted in a secure and scalable environment, ensuring smooth performance for users. 
 
-Just a quick heads up—my app is currently hosted on Azure as a free tier web app, which means it might be a bit slower to load and respond compared to apps hosted on a paid tier. The free tier provides limited resources, so if you notice any delays, that's the reason! The same goes for the Gcloud MySQL service tier.
+Just a quick heads up—my app is currently hosted on Azure as a free tier web app, which means it might be a bit slower to load and respond compared to apps hosted on a paid tier. The same can be said for the Gcloud MySQL server. The free tier provides limited resources, so if you notice any delays, that's the reason! 
 
 Since this is a hobby/showcase project, I have set the task limit per user to 5. Thanks for your understanding!
 
