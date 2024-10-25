@@ -15,6 +15,6 @@ Just a quick heads up—my app is currently hosted on Azure as a free tier web a
 Since this is a hobby/showcase project, I have set the task limit per user to 5. Thanks for your understanding!
 
 <img width="700" alt="Screenshot 2024-10-25 at 11 16 50 AM" src="https://github.com/user-attachments/assets/3373afcd-15c2-4056-afce-2fc8fd3dd814">
-<img width="700" alt="Screenshot 2024-10-25 at 10 55 01 AM" src="https://github.com/user-attachments/assets/1ad501f7-3fb6-4950-b59b-1c6fdc09615e">
-<img width="700" alt="Screenshot 2024-10-25 at 11 09 30 AM" src="https://github.com/user-attachments/assets/1497234c-a1c3-4fc3-aeb5-4c1ca4447d0f">
-<img width="700" alt="Screenshot 2024-10-25 at 11 09 04 AM" src="https://github.com/user-attachments/assets/625ab718-09f5-4bb4-a559-2277d5bddf50">
+<img width="700" alt="Screenshot 2024-10-25 at 11 25 20 AM" src="https://github.com/user-attachments/assets/592d68d7-28a0-4417-8775-dba32ee8938d">
+<img width="700" alt="Screenshot 2024-10-25 at 11 25 28 AM" src="https://github.com/user-attachments/assets/461c2a73-6966-48be-ab69-f1918b1bcfd9">
+<img width="700" alt="Screenshot 2024-10-25 at 11 25 40 AM" src="https://github.com/user-attachments/assets/dd3301c2-886d-4b08-8bfa-ec150365ae34">
