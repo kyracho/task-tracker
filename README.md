@@ -1,5 +1,6 @@
-# Task Tracker version 1
-Hello, welcome to the repo of my task tracker application. A separate, private repo is configured with GitHub Actions workflows to dockerize and deploy the frontend and backend applications to Azure. This repo contains no sensitive data, and is not used in the forementioned CI/CD process. 
+## Hello 
+
+Welcome to the repo of my task tracker application. A separate, private repo is configured with GitHub Actions workflows to dockerize and deploy the frontend and backend applications to Azure. This repo contains no sensitive data, and is not used in the forementioned CI/CD process. 
 
 I designed this application as a comprehensive task management tool designed to simplify how users organize and track their tasks. I built it using Angular on the frontend for an intuitive user interface and Spring Boot on the backend to handle logic and data operations. Task data is stored in a Google Cloud MySQL database, ensuring secure and scalable storage.
 
@@ -14,6 +15,6 @@ Just a quick heads up—my app is currently hosted on Azure as a free tier web a
 Since this is a hobby/showcase project, I have set the task limit per user to 5. Thanks for your understanding!
 
 <img width="700" alt="Screenshot 2024-10-02 at 6 22 00 PM" src="https://github.com/user-attachments/assets/ca19fb0c-e818-476b-bde8-75494f2a99f4">
-<img width="700" alt="Screenshot 2024-10-02 at 6 20 31 PM" src="https://github.com/user-attachments/assets/fe74bf9e-43e5-4656-b96f-93d10d9ee734">
-<img width="700" alt="Screenshot 2024-10-02 at 6 21 39 PM" src="https://github.com/user-attachments/assets/2d243626-b97b-4b1d-ac99-c73c8d707b76">
-<img width="700" alt="Screenshot 2024-10-02 at 6 20 41 PM" src="https://github.com/user-attachments/assets/e7a6e0bb-0aa3-4e02-9a40-9a083d169fc5">
+<img width="962" alt="Screenshot 2024-10-25 at 10 55 01 AM" src="https://github.com/user-attachments/assets/1ad501f7-3fb6-4950-b59b-1c6fdc09615e">
+<img width="821" alt="Screenshot 2024-10-25 at 11 09 30 AM" src="https://github.com/user-attachments/assets/1497234c-a1c3-4fc3-aeb5-4c1ca4447d0f">
+<img width="826" alt="Screenshot 2024-10-25 at 11 09 04 AM" src="https://github.com/user-attachments/assets/625ab718-09f5-4bb4-a559-2277d5bddf50">
